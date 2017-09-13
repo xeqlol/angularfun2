@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace HomeCinema.Entities
 {
-    public interface IEntityBase
+    class Role : IEntityBase
     {
-        int ID { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
     }
 }
