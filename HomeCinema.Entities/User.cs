@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace HomeCinema.Entities
 {
-    class User : IEntityBase
+    /// <summary>
+    /// HomeCinema User Account
+    /// </summary>
+    public class User : IEntityBase
     {
         public User()
         {
-            UserRoles = new List<UserRoles>();
+            UserRoles = new List<UserRole>();
         }
-
         public int ID { get; set; }
         public string Username { get; set; }
         public string Email { get; set; }

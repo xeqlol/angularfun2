@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace HomeCinema.Entities
 {
-    class Movie : IEntityBase
+    public class Movie : IEntityBase
     {
         public Movie()
         {
             Stocks = new List<Stock>();
         }
-
         public int ID { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
